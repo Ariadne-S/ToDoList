@@ -1,0 +1,4 @@
+function to tick and cross the list
+delete items from list
+reorder list
+make it look pretty
