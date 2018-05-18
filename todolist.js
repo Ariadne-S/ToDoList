@@ -25,6 +25,11 @@ function addToDo() {
         item.appendChild(deleteButton);
         todoItems.appendChild(item);
         reminderInput.value = "";
+
+        //
+        deleteButton.addEventListener("click", function(){
+            item.remove();
+        });
    }
 }
 
@@ -42,3 +47,5 @@ reminderInput.addEventListener("keyup", function(event){
     }
 });
 
+var ticked = document.querySelector(item);
+ticked.classList.add("itemComplete");

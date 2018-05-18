@@ -7,7 +7,8 @@ html{
     background-color: white;
 }
 
-body{
+.container{
+    position: relative;
     background-color: lightgray;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -18,13 +19,15 @@ body{
     height:100vh;
 }
 
-.container{
- }
 .heading {
     background-color: lightslategrey;
     text-align: center;
     padding-top: 10pt;
     padding-bottom: 2.5pt;
+    border-bottom: 5pt;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
 }
 
 h1 {
@@ -64,23 +67,48 @@ li{
     background-color: rgb(146, 145, 145);
     border-bottom-color: rgb(97, 97, 97);
     border-bottom-style: solid;
-    border-bottom-width: 0.5pt;
+    border-bottom-width: 1pt;
     border-top-color: rgb(97, 97, 97);
     border-top-style: solid;
     border-top-width: 0.5pt;
     list-style: none;
     position: relative;
-    transition: 0.2s;
     padding: 8px;
     padding-left:30px;
 }
 ul.todo-items li:nth-child(odd) {
     background: #f9f9f9;
 }
+.itemComplete{
+    text-decoration: line-through;
+    color: darkgrey;
+}
+
 .delete-button {
     position: absolute;
     top:0;
     bottom: 0;
     right: 0;
     width: 36px;
+}
+
+.delete-button:hover {
+    background-color: rgb(245, 130, 130);
+}
+
+footer {
+    position: absolute;
+    background-color: lightslategrey;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 8px;
+    text-align: right;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 3em;
+    border-bottom: 5pt;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
 }
