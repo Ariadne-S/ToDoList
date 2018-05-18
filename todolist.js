@@ -30,6 +30,18 @@ function addToDo() {
         deleteButton.addEventListener("click", function(){
             item.remove();
         });
+
+        //ticked.classList.add("itemComplete");
+        item.addEventListener("click", function(){
+            var itemComplete = "item-complete";
+            if (item.classList.contains(itemComplete)) {
+                item.classList.remove(itemComplete);
+            } else {
+                item.classList.add(itemComplete);
+            }
+
+            
+        });
    }
 }
 
@@ -46,6 +58,3 @@ reminderInput.addEventListener("keyup", function(event){
         addToDo();
     }
 });
-
-var ticked = document.querySelector(item);
-ticked.classList.add("itemComplete");

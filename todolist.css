@@ -64,7 +64,7 @@ ul.todo-items{
 
 li{
     text-align: left;
-    background-color: rgb(146, 145, 145);
+    background-color: rgb(190, 190, 190);
     border-bottom-color: rgb(97, 97, 97);
     border-bottom-style: solid;
     border-bottom-width: 1pt;
@@ -76,13 +76,31 @@ li{
     padding: 8px;
     padding-left:30px;
 }
+
 ul.todo-items li:nth-child(odd) {
     background: #f9f9f9;
 }
-.itemComplete{
-    text-decoration: line-through;
-    color: darkgrey;
+ul.todo-items li:hover{
+    background-color: lightblue;
 }
+
+ul.todo-items li.item-complete{
+    text-decoration: line-through;
+    color: green;
+    background-color: rgb(192, 228, 192);
+}
+
+.item-complete:before {
+    content:'✓';
+    display:inline-block;
+    vertical-align: top;
+    line-height: 1em;
+    width: 1em;
+    height:1em;
+    margin-right: 0.3em;
+    text-align: center;
+    color:green;
+  }
 
 .delete-button {
     position: absolute;
@@ -93,7 +111,7 @@ ul.todo-items li:nth-child(odd) {
 }
 
 .delete-button:hover {
-    background-color: rgb(245, 130, 130);
+    background-color:darkgrey;
 }
 
 footer {
