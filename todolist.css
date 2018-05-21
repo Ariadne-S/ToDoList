@@ -3,11 +3,11 @@ body, html {
     margin: 0;
 }
 
-html{
+html {
     background-color: white;
 }
 
-.container{
+.container {
     position: relative;
     background-color: lightgray;
     margin-left: 5vw;
@@ -34,7 +34,7 @@ h1 {
     margin:0;
 }
 
-h2{
+h2 {
     margin-top: 8pt;
     margin-bottom: 10pt;
 }
@@ -49,20 +49,20 @@ h2{
     width: 60vw;
 }
 
-.button{
+.add-button {
     width: 10vw;
 }
 
-.break{
+.break {
     padding: 6pt;
 }
 
-ul.todo-items{
-    -webkit-margin-before:0;
+ul.todo-list {
+    -webkit-margin-before: 0;
     -webkit-padding-start: 0;
 }
 
-li{
+.todo-item {
     text-align: left;
     background-color: rgb(190, 190, 190);
     border-bottom-color: rgb(97, 97, 97);
@@ -77,14 +77,14 @@ li{
     padding-left:30px;
 }
 
-ul.todo-items li:nth-child(odd) {
+ul.todo-list .todo-item:nth-child(odd) {
     background: #f9f9f9;
 }
-ul.todo-items li:hover{
+ul.todo-list .todo-item:hover {
     background-color: lightblue;
 }
 
-ul.todo-items li.item-complete{
+ul.todo-list .todo-item.item-complete {
     text-decoration: line-through;
     color: green;
     background-color: rgb(192, 228, 192);
